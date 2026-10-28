@@ -45,7 +45,7 @@ Playwright CLI can be used for optional browser checks and screenshots. It is no
 
 ## Screenshots
 
-Captured from the published site on **October 27, 2026**, at browser viewports of **1440 × 1000** (desktop) and **390 × 844** (mobile).
+Captured from a local HTTP preview of the current HTML/CSS on **October 28, 2026**, at browser viewports of **1440 × 1000** (desktop) and **390 × 844** (mobile). The same source files are published to GitHub Pages.
 
 ### Desktop
 
@@ -125,12 +125,13 @@ The screenshots were captured with **Playwright CLI and Google Chrome on macOS**
 | Check | Result |
 | --- | --- |
 | Home → My University → Resume → Home | Passed using visible link clicks |
-| University content | Computer Science major, Mathematics minor, graduating in 2028 displayed |
+| University content | Major, Minor, and Graduation displayed as three labeled facts: Computer Science, Mathematics, and 2028 |
 | Resume content | Education, experience, skills, projects, and both certificates displayed |
 | Mobile width at 390px | All three pages had `scrollWidth === innerWidth`; no horizontal overflow |
+| Additional responsive checks | All three pages also checked at 320px and 768px widths without horizontal overflow |
 | Screenshot files | Six full-page PNGs: three desktop and three mobile |
 
-The published pages and stylesheet loaded during the Playwright capture, with no JavaScript exceptions. The browser also requested `/favicon.ico` and received a 404; this project does not include a custom favicon.
+The preview pages and stylesheet loaded during the Playwright capture, with no JavaScript exceptions. Chrome also requested `/favicon.ico` when opening the site and received a 404; this project does not include a custom favicon. The updated source is checked on the public GitHub Pages URL after deployment.
 
 ### Reproduce a capture with Playwright CLI
 
