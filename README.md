@@ -30,6 +30,8 @@ flowchart LR
     Resume --> Styles
 ```
 
+The shared stylesheet loads `assets/background-contours.jpg`, the selected AI-generated ivory and scarlet contour background. Content stays on opaque white panels, and print styles remove the background.
+
 This is a static site: the browser loads an HTML page and its shared CSS file. There is no application server, backend, build step, or runtime dependency.
 
 ## Technologies
@@ -108,6 +110,8 @@ GitHub Pages is configured to publish the repository's `main` branch from the ro
 ├── myUniversity.html
 ├── resume.html
 ├── styles.css
+├── assets/
+│   └── background-contours.jpg
 └── output/
     └── playwright/
         ├── home-desktop.png
