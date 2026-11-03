@@ -8,13 +8,13 @@ A responsive, three-page personal website built with plain HTML and CSS for a Li
 
 | Project element | Where it is implemented |
 | --- | --- |
-| Personal introduction and profile | `index.html` |
+| Personal introduction, interests, professional facts, and GitHub profile section | `index.html` |
 | Rutgers University–Newark and studies | `myUniversity.html` |
 | Education, experience, skills, projects, and certificates | `resume.html` |
 | Shared navigation, responsive layout, focus states, reduced-motion handling, and print styles | `styles.css` |
 | Static publishing marker | `.nojekyll` |
 
-All three pages use the same navigation and stylesheet. The pages include semantic headings and sections, a skip-to-content link, and an `aria-current` marker for the active page.
+All three pages use the same navigation and stylesheet, including a direct link to [TarunT27 on GitHub](https://github.com/TarunT27). The homepage also includes a GitHub profile section and personal interests: the gym, driving, trading, traveling, and watching movies. The pages include semantic headings and sections, a skip-to-content link, and an `aria-current` marker for the active page.
 
 ## Architecture
 
@@ -45,7 +45,7 @@ Playwright CLI can be used for optional browser checks and screenshots. It is no
 
 ## Screenshots
 
-Captured from a local HTTP preview of the current HTML/CSS on **October 28, 2026**, at browser viewports of **1440 × 1000** (desktop) and **390 × 844** (mobile). The same source files are published to GitHub Pages.
+Captured from a local HTTP preview of the current HTML/CSS on **November 2, 2026**, at browser viewports of **1440 × 1000** (desktop) and **390 × 844** (mobile). The same source files are published to GitHub Pages.
 
 ### Desktop
 
@@ -125,6 +125,7 @@ The screenshots were captured with **Playwright CLI and Google Chrome on macOS**
 | Check | Result |
 | --- | --- |
 | Home → My University → Resume → Home | Passed using visible link clicks |
+| Homepage GitHub button | Opens `https://github.com/TarunT27`; profile name and URL verified |
 | University content | Major, Minor, and Graduation displayed as three labeled facts: Computer Science, Mathematics, and 2028 |
 | Resume content | Education, experience, skills, projects, and both certificates displayed |
 | Mobile width at 390px | All three pages had `scrollWidth === innerWidth`; no horizontal overflow |
